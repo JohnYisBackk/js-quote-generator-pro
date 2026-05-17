@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-family: Inter, sans-serif;
+  background:
+    radial-gradient(circle at top left, #2563eb, transparent 30%),
+    radial-gradient(circle at bottom right, #9333ea, transparent 30%), #0f172a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  overflow: hidden;
+}
+
+.background-glow {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  filter: blur(140px);
+  opacity: 0.2;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.glow-1 {
+  top: -120px;
+  left: -120px;
+  background: #3b82f6;
+}
+
+.glow-2 {
+  bottom: -120px;
+  right: -120px;
+  background: #8b5cf6;
+}
+
+.app {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 700px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #93c5fd;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.header h1 {
+  font-size: 54px;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+.quote-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+  border-radius: 30px;
+  padding: 36px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.quote-content {
+  margin-bottom: 30px;
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+}
+
+.quote-content.hidden-animation {
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+}
+
+.quote-text {
+  font-size: 30px;
+  line-height: 1.6;
+  margin-bottom: 22px;
+  font-weight: 600;
+}
+
+.quote-author {
+  font-size: 18px;
+  color: #cbd5e1;
+}
+
+button {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  padding: 15px 25px;
+  border: none;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.loading,
+.error-message {
+  margin-bottom: 20px;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.loading {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.error-message {
+  background: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .header h1 {
+    font-size: 42px;
+  }
+
+  .quote-text {
+    font-size: 24px;
+  }
+
+  .quote-card {
+    padding: 26px;
+  }
+}

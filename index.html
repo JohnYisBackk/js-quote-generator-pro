@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Quote Generator</title>
+  </head>
+  <body>
+    <div class="background-glow glow-1"></div>
+    <div class="background-glow glow-2"></div>
+
+    <div class="app">
+      <header class="header">
+        <p class="eyebrow">Async JavaScript Project</p>
+
+        <h1>Quote Generator</h1>
+
+        <p class="subtitle">
+          Generate random inspirational quotes using API requests.
+        </p>
+      </header>
+
+      <main class="quote-card">
+        <div id="loading" class="loading hidden">Loading quote...</div>
+
+        <div id="errorMessage" class="error-message hidden">
+          Failed to load quote.
+        </div>
+
+        <div class="quote-content" id="quoteContent">
+          <p id="quoteText" class="quote-text">
+            Click the button to generate a quote.
+          </p>
+
+          <span id="quoteAuthor" class="quote-author"> — Unknown </span>
+        </div>
+
+        <button id="generateBtn">Generate Quote</button>
+        <button id="copyBtn">Copy Quote</button>
+      </main>
+    </div>
+  </body>
+</html>
