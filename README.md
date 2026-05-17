@@ -2,7 +2,7 @@
 
 ## 🌐 Live Demo
 
-👉 https://your-live-demo-link.com
+👉 https://johnyisbackk.github.io/js-quote-generator-pro/
 
 ---
 
@@ -57,24 +57,7 @@ This project fetches random quotes from an API and displays them with smooth UI 
 - Clipboard API
 - UI animations
 
----
 
-## 📦 Future Improvements
 
-- Save favorite quotes
-- Add quote categories
-- Add tweet/share button
-- Add localStorage history
-- Add animated skeleton loader
 
----
 
-## 📸 Preview
-
-_Add screenshot or GIF here_
-
----
-
-## 📜 License
-
-Free to use for learning and personal projects.
